@@ -1,17 +1,22 @@
 @import 'https://fonts.googleapis.com/css?family=Coiny';
 
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+
 body {
 	margin: 0;
 }
 
 nav {
 	text-align: center;
-	background-color: #333;
+	background-image: url("../images/nav-back.jpg");
+	background-size: cover;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	min-height: 36px;
+	z-index: 5;
+
 }
 
 nav ul {
@@ -27,23 +32,51 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	font-family: "arial";
-	font-size: 12px;
+	font-family: "Coiny";
+	font-size: 11px;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 	color: #fff;
+}
+
+nav a:hover {
+	color: #ccc;
+	text-decoration: none;
 }	
+
 section {
-	height: 700px;
-	padding: 40px;
+	min-height: 600px;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-h1 {
-	font-family: 'Coiny', cursive;
-	font-size: 48px;
-	color: #fff;
-	margin-top: 20px;
+.season-name h1 {
+	font-family: "Coiny";
+	font-size: 60px;
+	color: rgba(255, 255, 255, 0.7);
+	padding: 50px 40px;
+}
+
+.quote {
+	font-family: "Playfair Display";
+	font-size: 36px;
+	line-height: 1.2em;
+	color: #ffffff;
+	width: 80%;
+	padding-left: 40px;
+	text-shadow: 2px 2px 10px rgba(0, 51, 153, 0.2);
+}
+
+.credit {
+	font-family: "Coiny";
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	padding-left: 40px;
+	margin-top: 10px;
+	text-shadow: 2px 2px 10px rgba(0, 51, 153, 0.2);
 }
 
 .current a {
@@ -74,6 +107,133 @@ h1 {
 	background-image: url("../images/spring.jpg");
 }
 
+.paper-divide {
+	background-image: url("../images/paper-back.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	min-height: 400px;
+}
+
+.paper-text {
+	font-family: "Playfair Display";
+	font-size: 30px;
+	color: #999;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#stars {
+	height: 250px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	background-repeat: no-repeat;
+    background-position: top center;
+	animation: stars-change 4s infinite alternate;
+}
+
+#sweater {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-radius: 50%;
+	animation: fall-colors 3s infinite alternate;
+}
+
+#snow-falling {
+	animation: fadeOutDown 2s infinite;
+	width: 150px;
+	margin: auto;
+}
+
+.bare-tree {
+	width: 300px;
+	margin: auto;
+	transform: translate(0%, -80px);
+	z-index: -1;
+}
+
+#corn {
+	height: 300px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background-repeat: no-repeat;
+    background-position: top center;
+	animation: corn-grow 10s infinite;
+}
+
+@keyframes stars-change {
+
+	0% {
+		background-image: url("../images/stars-1.svg");
+	}
+	33% {
+		background-image: url("../images/stars-2.svg");
+	}
+	66% {
+		background-image: url("../images/stars-3.svg");
+	}
+	100% {
+		background-image: url("../images/stars-4.svg");
+	}
+}
+
+@keyframes corn-grow {
+
+	0% {
+		background-image: url("../images/corn-1.svg");
+	}
+	10% {
+		background-image: url("../images/corn-2.svg");
+	}
+	30% {
+		background-image: url("../images/corn-3.svg");
+	}
+	50% {
+		background-image: url("../images/corn-4.svg");
+	}
+	70% {
+		background-image: url("../images/corn-5.svg");
+	}
+	100% {
+		background-image: url("../images/corn-5.svg");
+	}
+}
+
+@keyframes fall-colors {
+
+	0% {
+		background: #ff8400;
+	}
+	33% {
+		background: #a30401;
+	}
+	66% {
+		background: #354b2d;
+	}
+	100% {
+		background: #42535d;
+	}
+}
+
+
+@keyframes followPath {
+
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, 50px);
+	}
+
+	100% {
+		transform: translate(50px, 50px);
+	}
+}
 
 
 @media (max-width: 768px) {
@@ -89,9 +249,25 @@ h1 {
 	#menu-icon {
 	display: block;
 	font-family: "coiny";
-	font-size: 12px;
+	font-size: 11px;
+	letter-spacing: 1px;
 	color: #fff;
 	padding-right: 12px;
 	padding-top: 12px;
 	}
-}	
+
+	section {
+	min-height: 500px;
+	}
+
+	.quote {
+	font-size: 30px;
+	width: 85%;
+	}
+
+	.paper-text {
+	font-size: 24px;
+	}
+}
+
+

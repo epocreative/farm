@@ -18,3 +18,9 @@ $(window).resize(function() {
 
 // Add parallax
 $.stellar();
+
+$.stellar({ responsive: true });
+
+$(window).stellar({ horizontalScrolling: false });
+
+
