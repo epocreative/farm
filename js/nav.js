@@ -17,10 +17,10 @@ $(window).resize(function() {
 });
 
 // Add parallax
-$.stellar();
 
-$.stellar({ responsive: true });
-
-$(window).stellar({ horizontalScrolling: false });
+$(window).stellar({ 
+	horizontalScrolling: false, 
+	responsive: true
+});
 
 

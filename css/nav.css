@@ -129,7 +129,8 @@ section {
 	margin-top: 10px;
 	margin-bottom: 50px;
 	background-repeat: no-repeat;
-    background-position: top center;
+    	background-position: top center;
+    background-size: auto 100%;
 	animation: stars-change 4s infinite alternate;
 }
 
@@ -162,45 +163,46 @@ section {
 	margin-top: 20px;
 	margin-bottom: 50px;
 	background-repeat: no-repeat;
-    background-position: top center;
+   		background-position: top center;
+    background-size: auto 100%;
 	animation: corn-grow 10s infinite;
 }
 
 @keyframes stars-change {
 
 	0% {
-		background-image: url("../images/stars-1.svg");
+		background-image: url("../images/stars-1.png");
 	}
 	33% {
-		background-image: url("../images/stars-2.svg");
+		background-image: url("../images/stars-2.png");
 	}
 	66% {
-		background-image: url("../images/stars-3.svg");
+		background-image: url("../images/stars-3.png");
 	}
 	100% {
-		background-image: url("../images/stars-4.svg");
+		background-image: url("../images/stars-4.png");
 	}
 }
 
 @keyframes corn-grow {
 
 	0% {
-		background-image: url("../images/corn-1.svg");
+		background-image: url("../images/corn-1.png");
 	}
 	10% {
-		background-image: url("../images/corn-2.svg");
+		background-image: url("../images/corn-2.png");
 	}
 	30% {
-		background-image: url("../images/corn-3.svg");
+		background-image: url("../images/corn-3.png");
 	}
 	50% {
-		background-image: url("../images/corn-4.svg");
+		background-image: url("../images/corn-4.png");
 	}
 	70% {
-		background-image: url("../images/corn-5.svg");
+		background-image: url("../images/corn-5.png");
 	}
 	100% {
-		background-image: url("../images/corn-5.svg");
+		background-image: url("../images/corn-5.png");
 	}
 }
 
@@ -244,30 +246,41 @@ section {
 
 	nav li {
 		display: block;
+		padding-bottom: 20px;
 	}
 
 	#menu-icon {
-	display: block;
-	font-family: "coiny";
-	font-size: 11px;
-	letter-spacing: 1px;
-	color: #fff;
-	padding-right: 12px;
-	padding-top: 12px;
+		display: block;
+		font-family: "coiny";
+		font-size: 11px;
+		letter-spacing: 1px;
+		color: #fff;
+		padding-right: 12px;
+		padding-top: 12px;
 	}
 
 	section {
-	min-height: 500px;
+		min-height: 500px;
+	}
+
+	.season-name h1 {
+		font-size: 48px;
+		padding: 60px 40px 20px 40px;
 	}
 
 	.quote {
-	font-size: 30px;
-	width: 85%;
+		font-size: 30px;
+		width: 90%;
 	}
 
 	.paper-text {
-	font-size: 24px;
+		font-size: 24px;
 	}
+
+	#corn {
+		background-size: auto 90%;
+}
+
 }
 
 
