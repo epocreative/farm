@@ -260,7 +260,8 @@ section {
 	}
 
 	section {
-		min-height: 500px;
+	min-height: 600px;
+	background-position: top center;
 	}
 
 	.season-name h1 {
@@ -279,8 +280,28 @@ section {
 
 	#corn {
 		background-size: auto 90%;
-}
+	}
 
 }
 
+
+Works for iphone but jumpy scroll but puts gaps in between images 
+
+		background-attachment: scroll;
+
+
+
+/*
+Other attempts to fix iphone background-size cover issue on section
+ 
+		height: 100vh !important;
+		overflow: hidden !important;
+
+  		background-size: auto 100%;
+
+		background-position: center center;
+
+		min-height: 600px;
+
+*/
 
